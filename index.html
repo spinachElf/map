@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>지도고고</title>
+	<style type="text/css">
+		#map{width: 500px;height: 400px;background: yellow;}
+	</style>
+</head>
+<body>
+<div id="map"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fa0eda991e1e1901414f84e72d0d4932">
+	</script>
+	<script>
+		var container = document.getElementById('map'); 
+		var options = { center: new kakao.maps.LatLng(33.450701, 126.570667), level: 3 };
+		var map = new kakao.maps.Map(container, options);
+	</script>
+</body>
+</html>
